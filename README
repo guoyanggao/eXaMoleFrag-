@@ -1,0 +1,3 @@
+Run the command as follows
+
+"# python ./source/main.py  module.inp  ./test/XXX.pdb"

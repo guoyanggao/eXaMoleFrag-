@@ -1,0 +1,21 @@
+#cut bond改edges和connect;;extend和compress都只改connect，和edge无关    cutbond无论是第一类还是第二类都对扫描时候无影响
+#分支？pdb一个分支，非pdb一个分支？    目前仅限于标准pdb文件吧
+
+0703
+
+Q:bdf-easy-input 如果有 extcharge模块，但是没有额外输入文件会怎么样？
+A:会报错，有如下乱码
+ At line 1171 of file /home/gao/software/bdf-pkg/source/compass/moleinp.F90 (unit = 1013, file = '/home/gao/work/bdfinp/1bba.extcharge')
+ Fortran runtime error: End of file
+
+Error termination. Backtrace:
+#0  0x147de96c03f2 in list_formatted_read_scalar
+        at /usr/src/debug/gcc/gcc/libgfortran/io/list_read.c:2308
+#1  0x560e70715970 in ???
+#2  0x560e70718a59 in ???
+#3  0x560e70713bd2 in ???
+#4  0x560e707125ba in ???
+#5  0x147de8e00ccf in ???
+#6  0x147de8e00d89 in ???
+#7  0x560e70712854 in ???
+#8  0xffffffffffffffff in ???
